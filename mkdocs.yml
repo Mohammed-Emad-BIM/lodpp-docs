@@ -1,0 +1,66 @@
+site_name: LOD++
+site_description: Documentation for the LOD++ Revit add-in
+site_author: Mohamed Emad Mohamed
+copyright: Copyright &copy; Mohamed Emad Mohamed
+site_url: https://mohammed-emad-bim.github.io/lodpp-docs/
+
+repo_url: https://github.com/Mohammed-Emad-BIM/lodpp-docs
+repo_name: lodpp-docs
+edit_uri: edit/main/docs/
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/mohamed-emad-arch/
+    - icon: fontawesome/solid/envelope
+      link: mailto:mohammed.emad.info@gmail.com
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Light mode
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Dark mode
+  features:
+    - navigation.sections
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Using LOD++: using-lodpp.md
+  - About the developer: about.md
+  - Feedback: feedback.md
+  - Information++:
+      - Locate: docs/information/locate.md
+      - Populate: docs/information/populate.md
+  - Geometry++:
+      - Split: docs/geometry/split.md
+      - Track: docs/geometry/track.md
+      - Parts: docs/geometry/parts.md
+      - Quick Actions: docs/geometry/quick-actions.md
+  - Audit++:
+      - Purge: docs/audit/purge.md
+      - Rename: docs/audit/rename.md
+      - Pin: docs/audit/pin.md
+      - Parameter audit: docs/audit/parameters.md
+  - System++:
+      - Warnings: docs/system/warnings.md
+      - Find & Replace: docs/system/find-replace.md
+      - Find IDs: docs/system/find.md
+      - Transfer: docs/system/transfer.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
